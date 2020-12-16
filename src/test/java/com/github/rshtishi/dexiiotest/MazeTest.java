@@ -30,9 +30,6 @@ public class MazeTest {
 		expectedStack.push(new Pair<>(3,3));
 		boolean result = maze.buildPath(0, 3);
 		assertTrue(result);
-		maze.getPath().forEach(pair ->{
-			System.out.println(pair.getValue0()+" "+pair.getValue1());
-		});
 		assertEquals(expectedStack, maze.getPath());
 	}
 	
